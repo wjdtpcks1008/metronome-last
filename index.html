@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>15 Sections</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"><circle cx="10" cy="10" r="6" fill="red" /></svg>'), auto;
+  }
+  .section h2 {
+    position: absolute;
+    top: 65%; 
+    left: 50%; 
+    transform: translate(-50%, 50%); 
+    color: white;
+    font-size: 28pt;
+  }
+
+  nav {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .button-box {
+    width: 258px;
+    height: 73px;
+    background-color: gray;
+    margin-left: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    font-size: 48pt;
+    font-weight: lighter;
+    color: black;
+    text-decoration: none;
+  }
+  .button-box:hover {
+  background-color: white;
+}
+
+.button-box:hover .button {
+  color: gray;
+}
+
+
+  .section {
+    width: 100%; 
+    height: 50vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    position: relative;
+  }
+
+  .section img {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+
+  .sticker {
+    position: absolute;
+    z-index: 1; 
+    width: 420px; 
+    height: auto;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .section {
+    background-size: cover; 
+    background-position: center; 
+  }
+  .sticker {
+    position: absolute;
+    z-index: 1; 
+    width: 420px; 
+    height: auto; 
+  }
+
+  .sticker1 {
+    top: 130px;
+    right: 80px;
+  }
+
+  .sticker2 {
+    top: 130px;
+    right: 80px;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .sticker3 {
+    top: 130px;
+    right: 400px;
+    width: 350px;
+  }
+
+  .sticker4 {
+    top: 130px;
+    right: 400px;
+    width: 350px;
+  }
+
+  .sticker5 {
+    top: 230px;
+    right: 800px;
+    width: 350px;
+  }
+
+  .sticker6 {
+    top: 230px;
+    right: 800px;
+    width: 350px;
+  }
+  .sticker {
+  position: absolute;
+}
+
+.sticker7 {
+  top: 10px;
+  left: 150px;
+  width: 250px;
+  height: 250px;
+}
+
+.sticker8 {
+  top: 10px;
+  left: 520px;
+  width: 160px;
+  height: 160px;
+}
+
+.sticker9 {
+  top: 10px;
+  left: 800px;
+  width: 210px;
+  height: 210px;
+}
+
+.sticker10 {
+  top: 10px;
+  right: 480px;
+  width: 190px;
+  height: 190px;
+}
+
+.sticker11 {
+  top: 10px;
+  right: 120px;
+  width: 250px;
+  height: 250px;
+}
+
+
+.sticker12 {
+  top: 10px;
+  left: 150px;
+  width: 250px;
+  height: 250px;
+}
+
+.sticker13 {
+  top: 10px;
+  left: 520px;
+  width: 160px;
+  height: 160px;
+}
+
+.sticker14 {
+  top: 10px;
+  left: 800px;
+  width: 210px;
+  height: 210px;
+}
+
+.sticker15 {
+  top: 10px;
+  right: 480px;
+  width: 190px;
+  height: 190px;
+}
+
+.sticker16 {
+  top: 10px;
+  right: 120px;
+  width: 250px;
+  height: 250px;
+}
+  .hidden {
+    opacity: 0;
+  }
+
+  .section {
+  background-size: cover; 
+  background-position: center; 
+}
+#section21 {
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section21 p {
+    color: white;
+    font-size: 20px; 
+}
+
+#section10Button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 40px 130px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px; 
+    font-style: bold;
+}
+
+
+#section10Button:hover {
+    background-color: #ccc; 
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="button-box"><a href="#section3" class="button">상품설명</a></div>
+  <div class="button-box"><a href="#section10" class="button">구매하기</a></div>
+  <div class="button-box"><a href="#section13" class="button" onclick="changeVideo()">속도 측정</a></div>
+</nav>
+
+<div class="section" id="section1" style="background-color: black; height: 120vh;">
+  <video autoplay muted loop class="video-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+    <source src="first1.mp4" type="video/mp4">
+   
+  </video>
+
+</div>
+
+<div class="section" id="section2" style="background-color: black; height: 52.5vh;">
+  <video autoplay muted loop class="video-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+    <source src="bpm.mp4" type="video/mp4">
+    
+  </video>
+
+</div>
+
+<div class="section" id="section3" style="background-color: black; height: 20vh;">
+  <img src="hyun.jpg" alt="Section 3 Image">
+ 
+</div>
+
+<div class="section" id="section4" style="background-color: black; height: 110vh;">
+  <img src="met.jpg" alt="Section 4 Image">
+  <img class="sticker sticker1" src="s3.png" alt="Sticker 1">
+  <img class="sticker sticker2" src="s3t.png" alt="Sticker 2" onmouseover="hideSticker(this)" onmouseout="showSticker(this)">
+  <img class="sticker sticker3" src="1.png" alt="Sticker 3">
+  <img class="sticker sticker4" src="1t.png" alt="Sticker 4" onmouseover="hideSticker(this)" onmouseout="showSticker(this)">
+  <img class="sticker sticker5" src="2.png" alt="Sticker 5">
+  <img class="sticker sticker6" src="2t.png" alt="Sticker 6" onmouseover="hideSticker(this)" onmouseout="showSticker(this)">
+
+</div>
+
+<div class="section" id="section5" style="background-color: black; height: 120vh;">
+  <video autoplay muted loop class="video-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+    <source src="busy.mp4" type="video/mp4">
+   
+  </video> 
+
+  <div class="button-box rounded-box" style="position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); background-color: white; border-radius: 50%; width: 300px; height: 300px;">
+    <a href="#section7" class="button" style="font-weight: bold; color: black; font-size: 30pt; line-height: 100px; white-space: nowrap;">속도 줄이기</a>
+  </div>
+</div>
+
+<div class="section" id="section6" style="background-color: black; height: 700vh;">
+</div>
+
+<div class="section" id="section7" style="background-image: url('your_video.jpg'); height: 100vh; display: flex; justify-content: center; align-items: center;">
+  <video autoplay muted loop class="video-bg" style="width: 100%; height: 100%; object-fit: cover;">
+    <source src="busy2.mp4" type="video/mp4">
+   
+  </video>
+</div>
+
+
+<div class="section" id="section8" style="background-image: url('bbu.jpg'); height: 320vh; display: flex; justify-content: center; align-items: center;">
+  <h2 style="text-align: center; white-space: nowrap; font-weight: normal; line-height: 1.5;">악보를 보면 항상 맨 처음 시작에는 박자가 적혀있듯 우리의 삶에도<br> 그에 맞는 속도가 있는게 아닐까요? <br><br>우리는 그 속도를 모른채 살아가거나 이 속도가 아님을 알고도<br> 더 빠른 속도로 살아내려합니다.<br> <br>이러한 현대인에게 <br>속도를 맞춰주고 체크해줄 무언가가 <br>필요합니다.</h2>
+</div>
+
+
+
+<div class="section" id="section9" style="position: relative;">
+  <video autoplay muted loop class="video-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+    <source src="secon.mp4" type="video/mp4">
+   
+  </video>
+
+</div>
+
+<div class="section" id="section10" style="background-image: url('product.jpg'); background-size: cover; background-position: center; width: 100vw; height: 2500px;">
+
+</div>
+
+
+<div class="section" id="section11" style="position: relative;;">
+  <video autoplay muted loop class="video-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+    <source src="bpm.mp4" type="video/mp4">
+    
+  </video>
+</div>
+<div class="section" id="section12" style="background-color: black; height: 50vh; display: flex; justify-content: flex-start; align-items: flex-start;">
+  <h2 style="color: white; margin-top: 0px; margin-left: 20px;">당신은 어떤 속도로 살아가나요?</h2>
+</div>
+
+<div class="section" id="section13" style="background-color: black; height: 50vh; display: flex; justify-content: flex-start; align-items: flex-start; position: relative;">
+  <img class="sticker sticker12" src="la2.png" alt="Sticker 12"onclick="scrollToSection('section12')">
+  <img class="sticker sticker7" src="la.png" alt="Sticker 7"onmouseover="hideSticker(this)" onmouseout="showSticker(this)"onclick="scrollToSection('section12')">
+  <img class="sticker sticker13" src="ad2.png" alt="Sticker 13">
+  <img class="sticker sticker8" src="ad.png" alt="Sticker 8"onmouseover="hideSticker(this)" onmouseout="showSticker(this)">
+  <img class="sticker sticker14" src="mo2.png" alt="Sticker 14">
+  <img class="sticker sticker9" src="mo.png" alt="Sticker 9"onmouseover="hideSticker(this)" onmouseout="showSticker(this)">
+  <img class="sticker sticker15" src="al2.png" alt="Sticker 15">
+  <img class="sticker sticker10" src="al.png" alt="Sticker 10"onmouseover="hideSticker(this)" onmouseout="showSticker(this)">
+  <img class="sticker sticker16" src="vi2.png" alt="Sticker 16">
+  <img class="sticker sticker11" src="vi.png" alt="Sticker 11"onmouseover="hideSticker(this)" onmouseout="showSticker(this)">
+  
+</div>
+
+</div>
+<div class="section" id="section14" style="background-image: url('your_video.jpg'); height: 140vh; display: flex; justify-content: center; align-items: center;">
+  <video autoplay muted loop class="video-bg" style="width: 110%; height: 110%; object-fit: cover;">
+    <source src="beat.mp4" type="video/mp4">
+   
+  </video>
+</div>
+
+<div class="section" id="section15" style="background-color: #ff6666; height: 150vh;">
+  <video autoplay muted loop class="video-bg" style="width: 100%; height: 100%; object-fit: cover;">
+    <source src="lar1.mp4" type="video/mp4">
+    
+  </video>
+
+  
+  <div class="button-box" style="position: absolute; bottom: 50px; right: 29%; transform: translateX(-50%);">
+    <a href="#section16" class="button" style="font-weight: bold; color: black; font-size: 20pt; line-height: 100px;"> 더 빠르게</a>
+  </div>
+</div>
+
+
+
+<div class="section" id="section16" style="background-color: #ff6666; height: 160vh;">
+  <video autoplay muted loop class="video-bg" style="width: 100%; height: 100%; object-fit: cover;">
+    <source src="adag1.mp4" type="video/mp4">
+   
+  </video>
+  <div class="button-box" style="position: absolute; bottom: 50px; right: 29%; transform: translateX(-50%);">
+    <a href="#section17" class="button" style="font-weight: bold; color: black; font-size: 20pt; line-height: 100px;"> 더 빠르게</a>
+  </div>
+  <div class="button-box" style="position: absolute; bottom: 50px; left: 10%; transform: translateX(-50%);">
+    <a href="#section15" class="button" style="font-weight: bold; color: black; font-size: 20pt; line-height: 100px;"> 더 느리게</a>
+  </div>
+</div>
+
+<div class="section" id="section17" style="background-color: #ff6666; height: 160vh;">
+  <video autoplay muted loop class="video-bg" style="width: 100%; height: 100%; object-fit: cover;">
+    <source src="mo1.mp4" type="video/mp4">
+    
+  </video>
+  <div class="button-box" style="position: absolute; bottom: 50px; right: 29%; transform: translateX(-50%);">
+    <a href="#section18" class="button" style="font-weight: bold; color: black; font-size: 20pt; line-height: 100px;"> 더 빠르게</a>
+  </div>
+  <div class="button-box" style="position: absolute; bottom: 50px; left: 10%; transform: translateX(-50%);">
+    <a href="#section16" class="button" style="font-weight: bold; color: black; font-size: 20pt; line-height: 100px;"> 더 느리게</a>
+  </div>
+</div>
+
+<div class="section" id="section18" style="background-color: #ff6666; height: 170vh;">
+  <video autoplay muted loop class="video-bg" style="width: 100%; height: 100%; object-fit: cover;">
+    <source src="alle1.mp4" type="video/mp4">
+    
+  </video>
+  <div class="button-box" style="position: absolute; bottom: 50px; right: 29%; transform: translateX(-50%);">
+    <a href="#section19" class="button" style="font-weight: bold; color: black; font-size: 20pt; line-height: 100px;"> 더 빠르게</a>
+  </div>
+  <div class="button-box" style="position: absolute; bottom: 50px; left: 10%; transform: translateX(-50%);">
+    <a href="#section17" class="button" style="font-weight: bold; color: black; font-size: 20pt; line-height: 100px;"> 더 느리게</a>
+  </div>
+</div>
+
+
+<div class="section" id="section19" style="background-color: #ff6666; height: 165vh;">
+  <video autoplay muted loop class="video-bg" style="width: 100%; height: 100%; object-fit: cover;">
+    <source src="viva1.mp4" type="video/mp4">
+    
+  </video>
+ 
+</div>
+<div class="section" id="section20" style="background-color: black; height: 80vh;">
+  <img src="last.jpg" alt="Section 20 Image">
+  <button id="section10Button">구매하러 가기</button>
+</div>
+
+<div class="section" id="section21" style="background-color: black; height: 10vh;">
+<p>Life speed metronome_designed by sechan jeong.2024</p>
+</div>
+
+<script>
+  
+  function hideSticker(element) {
+    element.classList.add("hidden");
+  }
+
+  
+  function showSticker(element) {
+    element.classList.remove("hidden");
+  }
+
+  
+  function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+document.addEventListener("DOMContentLoaded", function() {
+  const section10Button = document.getElementById('section10Button');
+  section10Button.addEventListener('click', function() {
+    const section10 = document.getElementById('section10');
+    section10.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+</script>
+
+</body>
+</html>
